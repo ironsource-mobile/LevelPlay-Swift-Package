@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "Unity-Mediation-iAds-Swift-Package",
+  name: "LevelPlay-Swift-Package",
   platforms: [.iOS(.v12)],
   products: [
     .library(name: "UnityMediationSDK", targets: ["LPSPM"]),
