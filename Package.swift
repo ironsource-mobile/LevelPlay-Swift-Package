@@ -5,19 +5,21 @@ import PackageDescription
 
 let package = Package(
   name: "LevelPlay-Swift-Package",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(name: "UnityMediationSDK", targets: ["LPSPM"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/ironsource-mobile/Unity-Ad-Quality-Swift-Package", "9.0.0"..<"10.0.0")
+    .package(url: "https://github.com/ironsource-mobile/Unity-Ad-Quality-Swift-Package", "9.0.0"..<"10.0.0"),
+    .package(url: "https://github.com/Unity-Technologies/Unity-Ads-Swift-Package", "4.19.0"..<"5.0.0")
   ],
   targets: [
     .target(
       name: "LPSPM",
       dependencies: [
         .target(name: "IronSourceSDK"),
-        .product(name: "AdQuality", package: "Unity-Ad-Quality-Swift-Package")
+        .product(name: "AdQuality", package: "Unity-Ad-Quality-Swift-Package"),
+        .product(name: "UnityAds", package: "Unity-Ads-Swift-Package")
       ],
       linkerSettings: [
         .linkedFramework("AdSupport"),
