@@ -43,8 +43,8 @@ let package = Package(
       ]),
     .binaryTarget(
       name: "IronSourceSDK",
-      url: "https://raw.githubusercontent.com/ironsource-mobile/iOS-sdk/master/9.6.1/IronSource9.6.1.zip",
-      checksum: "0b0c2533735856404e264812174ce0b520ef6ff7775f89420bf6cadb16b34e95"
+      url: "https://raw.githubusercontent.com/ironsource-mobile/iOS-sdk/master/9.7.0/IronSource9.7.0.zip",
+      checksum: "52c96e88dfa216265ed42e8123a145a4e4ab51882b33a3ff7f8aa145bd8b8bec"
     ),
   ]
 )
